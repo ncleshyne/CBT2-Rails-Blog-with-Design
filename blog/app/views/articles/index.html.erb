@@ -1,0 +1,78 @@
+<h1>Articles</h1>
+<a class="new" href="/articles/new">New article</a>
+<br>
+<br>
+<br>
+<!--<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th colspan="3"></th>
+  </tr>
+
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Destroy', article_path(article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>-->
+<!--<div class="row">
+  <div class="col-md-12"><h2 class="new_article"><%= link_to 'New article', new_article_path %></h2></div>
+</div>-->
+
+<!--<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+      <h1 class="title">Title</h1>
+      <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %><br><br></td>
+      </tr>
+      <% end %>
+    </div>
+    <div class="col-md-4">
+      <h2 class="text">Text</h2>
+      <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.text %><br><br></td>
+      </tr>
+      <% end %>
+    </div>
+    <div class="col-md-2">
+      <h3 class="action">Action</h3>
+      <% @articles.each do |article| %>
+        <tr>
+          <td><%= link_to 'Show', article_path(article) %></td>
+          <td><%= link_to 'Edit', edit_article_path(article) %></td>
+          <td><%= link_to 'Destroy', article_path(article),
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } %><br><br></td>
+        </tr>
+      <% end %>
+    </div>
+    <div class="col-md-1"></div>
+  </div>-->
+<div class="container con">
+<div class="row">
+  <% @articles.each do |article| %>
+      <div class="col-md-4 box">
+      <h1 class="title">Title</h1>
+      <%= article.title %><br>
+      <h2 class="text">Text</h2>
+      <%= truncate(article.text, length:65) %><br>
+      <h3 class="none"></h3><br><br>
+      <%= link_to "Show\t", article_path(article), class: 'action' %>
+      <%= link_to "\tEdit\t", edit_article_path(article), class: 'action' %>
+      <%= link_to "\tDestroy", article_path(article),
+                method: :delete,
+                data: { confirm: 'Are you sure?' }, class: 'action' %>
+      </div>
+  <% end %>
+</div>
+</div>

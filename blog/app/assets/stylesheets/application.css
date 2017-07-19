@@ -1,0 +1,250 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css);
+ html {
+ 	background-color: #fff;
+ 	-webkit-font-smoothing: antialiased;
+ 	}
+ body {
+     font-family: 'Montserrat', sans-serif;
+     color: #23292D;
+     background: #fff;
+     -webkit-font-smoothing: antialiased;
+     margin-top: 0px;
+     margin-bottom: 0px;
+
+ }
+ h1 {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+		font-size: 3em;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+h2 {
+  color: #000;
+  font-family: 'Lora';
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0;
+}
+.navbar-right {
+	margin-right: 0px;
+}
+.navbar-left {
+	display: block;
+	margin-top:-10px;
+	margin-left: 0;
+}
+
+.navbar-collapse, .navbar-fixed-top, .container {
+    background: #fff;
+    margin-top: 0;
+    padding: 0px 0px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 0;
+}
+.navbar-fixed-top, .navbar-collapse, .navbar-default, .navbar-nav li {
+		margin: 0px !important;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: inline-block;
+
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #faa9a7;
+    background-color: transparent;
+}
+.names {
+  font-family: 'Montserrat';
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  letter-spacing: 2px;
+	}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    /* The image used */
+    background-image: url(https://learnrubyrails.files.wordpress.com/2016/12/rubyonrails.png);
+
+    /* Full height */
+    height: 110%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+		overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background: #000;*/
+    z-index: 2;
+    opacity: 0.3;
+    /*filter: alpha(opacity=30);*/
+}
+.intro {
+		color: #fff;
+		position: relative;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    z-index: 3;
+
+}
+h1.ruby {
+  margin-top: 30px;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 3em;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+}
+h2.rails {
+  color: #fff;
+  font-family: 'Lora';
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 2px;
+}
+h1.title {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h2.text {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+/*h4.new {
+  color: #000;
+  font-family: 'Lora';
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 2px;
+  margin: 0;
+}*/
+.new {
+  color: #000;
+  font-family: 'Lora';
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-left: 110px;
+}
+
+.box {
+  font-family: 'Lora';
+  letter-spacing: 2px;
+  font-style: italic;
+  background-color: #F5F5F5;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 100%;
+  width: 30%;
+  margin-bottom: 10px;
+}
+.action {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
+  background-color: transparent;
+  color: #faa9a7;
+}
+a:-webkit-any-link {
+    color:  #337ab7;
+    cursor: auto;
+    text-decoration: none;
+}
+a:hover {
+  color: #faa9a7;
+}
+.textit {
+  font-family: 'Lora';
+}
+.textart {
+  font-family: 'Lora';
+  margin-bottom: 100px;
+}
+.con {
+  text-align: left;
+}
+.tt {
+  text-align: center;
+  margin-top: 10px;
+}
+h1.ttt {
+  text-align: left;
+  margin-top: 50px;
+}

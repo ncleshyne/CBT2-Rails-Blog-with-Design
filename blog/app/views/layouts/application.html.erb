@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitterclone</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <!--<div id="logo" class="logo"><a href="#overlay"></a></div>-->
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="https://ncleshyne.github.io" target="_blank" class="names">Me</a></li>
+                  <li><a href="/articles" class="names">Blog</a></li>
+              </ul>
+              <div class="nav navbar-nav navbar-left">
+                  <li><a href="/"><img src="https://ncleshyne.github.io/images/l.png" style="width:180px;height:38px;"></a></li>
+              </div>
+        </div>
+      </div>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>
