@@ -55,7 +55,7 @@ All the Blog Application Files can be found at the 'blog' folder.
    
    ![Local Host](images/local.png "Local Host")
    
-   Click "My blog" and prepare to be amazed by the world of Rails! 
+   Click "BLOG" and prepare to be amazed by the world of Rails! 
 
 
 #### Note:
