@@ -50,7 +50,7 @@ All the Blog Application Files can be found at the 'blog' folder.
    $ bin/rails server
    ```
    ![Rails Server](images/server.png "Rails Server")
-4. Finally, open the blog application by opening a browser window and navigating to http://localhost:3000.
+4. Finally, open the blog application by opening a browser window and navigate to http://localhost:3000.
    You should be able to see something like this:
    
    ![Local Host](images/local.png "Local Host")
